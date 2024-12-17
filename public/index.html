@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-header">Real-Time Chat</div>
+    <div id="username-section">
+      <input id="username-input" type="text" placeholder="Enter your username" />
+      <button id="join-button">Join</button>
+    </div>
+    <div id="messages"></div>
+    <form id="message-form" style="display: none;">
+      <input id="message-input" type="text" placeholder="Type a message..." autocomplete="off" required />
+      <button id="send-button" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
